@@ -1,0 +1,24 @@
+{
+  "name": "avenue-fashion",
+  "version": "1.0.0",
+  "description": "assignment 3 DMIT1530",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CodyRush/avenue-fashion.git"
+  },
+  "author": "Cody Rush",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/CodyRush/avenue-fashion/issues"
+  },
+  "homepage": "https://github.com/CodyRush/avenue-fashion#readme",
+  "dependencies": {
+    "gulp": "^4.0.0",
+    "gulp-sass": "^4.0.2",
+    "minireset.css": "0.0.4"
+  }
+}
