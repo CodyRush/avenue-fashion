@@ -12,9 +12,18 @@
 <body>
 
     <nav>
+        <h2 class="title"><span class="bold-text">Avenue</span> Fashion</h2>
         <ul class="icon-view">
-            <li class="title"><span class="bold-text">Avenue</span> Fashion</li>
             <li class="menu-icon"><a href="#"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars" class="svg-inline--fa fa-bars fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="#7b7b7f" d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"></path></svg></a></li>
+        </ul>
+
+        <ul class="list-view">
+            
+            <li><a href="#">mens</a></li>
+            <li><a href="#">womens</a></li>
+            <li><a href="#">the brand</a></li>
+            <li><a href="#">local stores</a></li>
+            <li><a href="#">look book</a></li>
         </ul>
     </nav>
 
@@ -26,32 +35,32 @@
 
     </header>
 
-    <main>
+    <main class="center-container">
         <form>
             <h2>Register</h2>
             <div>
-                <label for="">First Name</label>
-                <input type="text">
+                <label for="first-name">First Name</label>
+                <input type="text" id="first-name">
             </div>
             <div>
-                <label for="">Last Name</label>
-                <input type="text">
+                <label for="last-name">Last Name</label>
+                <input type="text" id="last-name">
             </div>
             <div>
-                <label for="">Email Address</label>
-                <input type="email">
+                <label for="email">Email Address</label>
+                <input type="email" id="email">
             </div>
             <div>
-                <label for="">Your Password</label>
-                <input type="password">
+                <label for="password">Your Password</label>
+                <input type="password" id="password">
             </div>
             <div>
-                <label for="">Confirm Password</label>
-                <input type="password">
+                <label for="confirm-pw">Confirm Password</label>
+                <input type="password" id="confirm-pw">
             </div>
             <div>
-                <label for="">How often would you like an email?</label>
-                <select name="" id="">
+                <label for="mailing-schedule">How often would you like an email?</label>
+                <select name="mailing-schedule" id="mailing-schedule">
                     <option value="daily">Daily</option>
                     <option value="monthly">Monthly</option>
                     <option value="yearly">Yearly</option>
@@ -59,50 +68,62 @@
                 </select>
             </div>
             <div>
-                <label for="">Phone Number (optional)</label>
-                <input type="number">
+                <label for="number">Phone Number (optional)</label>
+                <input type="number" id="number">
             </div>
             <div>
                 <input type="radio">
-                <label for="">I agree to the terms and conditions of the website. I may opt out at any time.</label>
+                <label for="terms">I agree to the terms and conditions of the website. I may opt out at any time.</label>
             </div>
             <div>
-                <label for="">Send us a message</label>
-                <textarea name="" id="" cols="30" rows="10"></textarea>
+                <label for="message">Send us a message</label>
+                <textarea name="message" id="message" cols="30" rows="10"></textarea>
+            </div>
+            <div class="radio-container">
+                <div class="radio-group">
+                    <input type="radio">
+                    <label for="">exclusive updates</label>
+                </div>
+                <div class="radio-group">
+                    <input type="radio">
+                    <label for="">discounts/sales</label>
+                </div>
+                <div class="radio-group">
+                    <input type="radio">
+                    <label for="">new arrivals</label>
+                </div>
+                <div class="radio-group">
+                    <input type="radio">
+                    <label for="">contests</label>
+                </div>
+                <div class="radio-group">
+                    <input type="radio">
+                    <label for="">everything</label>
+                </div>
+                <div class="radio-group">
+                    <input type="radio">
+                    <label for="">coupons</label>
+                </div>
             </div>
             <div>
-                <input type="radio">
-                <label for="">exclusive updates</label>
-                <input type="radio">
-                <label for="">discounts/sales</label>
-                <input type="radio">
-                <label for="">new arrivals</label>
-                <input type="radio">
-                <label for="">contests</label>
-                <input type="radio">
-                <label for="">everything</label>
-                <input type="radio">
-                <label for="">coupons</label>
-            </div>
-            <div>
-                <label for="">Language</label>
-                <select name="" id="">
+                <label for="language">Language</label>
+                <select name="language" id="language">
                     <option value="english">English</option>
                     <option value="not-supported">Not supported</option>
                     <option value="not-supported">Not supported</option>
                     <option value="not-supported">Not supported</option>
                 </select>
-                <label for="">Do you prefer a size of clothing?</label>
-                <select name="" id="">
+                <label for="size">Do you prefer a size of clothing?</label>
+                <select name="size" id="size">
                     <option value="small">Small</option>
                     <option value="medium">Medium</option>
                     <option value="large">Large</option>
                     <option value="xl">Extra Large</option>
                 </select>
-                <label for="">Your Store Location</label>
-                <select name="" id="">
+                <label for="location">Your Store Location</label>
+                <select name="location" id="location">
                     <option value="edm">Edmonton, AB</option>
-                    <option value="cgy">Calgary, AB</option>
+                    <option value="cgy">Beverly Hills, CA</option>
                     <option value="sea">Seattle, WA</option>
                     <option value="ny">New York, NY</option>
                 </select>
@@ -160,7 +181,7 @@
                     <h2 class="sm-header">award winner</h2>
                     <p class="sm-tag">fashion awards 2016</p>
                 </section>
-                <section>
+                <section class="icon-group">
                     <ul class="sm-icons">
                         <li class="facebook"><a href="#"><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="facebook-f" class="svg-inline--fa fa-facebook-f fa-w-9" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 264 512"><path fill="white" d="M215.8 85H264V3.6C255.7 2.5 227.1 0 193.8 0 124.3 0 76.7 42.4 76.7 120.3V192H0v91h76.7v229h94V283h73.6l11.7-91h-85.3v-62.7c0-26.3 7.3-44.3 45.1-44.3z"></path></svg></a></li>
                         <li class="icon"><a href="#"><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="twitter" class="svg-inline--fa fa-twitter fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="white" d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path></svg></a></li>

@@ -1,0 +1,17 @@
+.radio-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+    .radio-group {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex: 1 0;
+    }
+}
+
+input[type=text] {
+    background: blue;
+}

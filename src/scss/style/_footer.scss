@@ -51,8 +51,11 @@ footer {
 .award {
     background: $primary-dark;
     color: #fff;
-    padding: 2.5rem 2.25rem;
-    margin-bottom: 1.5rem;
+    height: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
     text-align: center;
 
     .sm-header {
@@ -72,7 +75,7 @@ footer {
     justify-content: space-around;
     align-items: center;
     background: $primary-light;
-    padding: 3.4rem 6rem;
+    height: 140px;
     color: white;
 
     .icon {
@@ -89,5 +92,27 @@ footer {
     text-align: center;
     color: $type-light;
     padding: 1rem 0;
+}
+
+@media(min-width: 760px) {
+    .links-container {
+        justify-content: space-evenly;
+        flex-wrap: nowrap;
+    }
+
+    .social-media {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .icon-group {
+            width: 400px;
+        }
+
+        .award {
+            width: 400px;
+            margin-right: 20px;
+        }
+    }
 }
 
