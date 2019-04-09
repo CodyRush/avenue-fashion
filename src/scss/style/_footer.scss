@@ -1,0 +1,41 @@
+footer {
+    background: #f8f8f8;
+}
+
+.links-container {
+    margin: 2rem 0rem;
+    .link-heading {
+        margin: 1rem 0;
+        color: $type-dark;
+        text-transform: uppercase;
+    }
+
+    .link {
+        color: $type-dark-2; 
+        line-height: 1.3;
+    }
+}
+
+.social-media {
+    margin-bottom: 1.5rem;
+}
+
+.award {
+    background: $primary-dark;
+    color: #fff;
+    padding: 2.5rem 2.25rem;
+    text-align: center;
+}
+
+.sm-icons {
+    background: $primary-light;
+    padding: 3.4rem 6rem;
+    color: white;
+}
+
+.foot-bar {
+    background: $primary-dark;
+    text-align: center;
+    color: $type-light;
+    padding: 1rem 0;
+}
