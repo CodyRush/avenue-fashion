@@ -5,6 +5,24 @@ nav {
     padding: 1.5rem 1rem;
 }
 
+.hidden {
+    display: none;
+}
+
+.mobile-menu {
+    font-size: 1.4rem;
+    text-align: center;
+
+    li {
+        padding: 1rem 0;
+    }
+
+    li:hover {
+        cursor: pointer;
+        background: $primary-light;
+    }
+}
+
 .title {
     margin-left: 1.5rem;
     font-weight: normal;

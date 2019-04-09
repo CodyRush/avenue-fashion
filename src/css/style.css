@@ -161,6 +161,7 @@ footer {
   -ms-flex-line-pack: center;
       align-content: center;
   text-align: center;
+  margin-bottom: 1.5rem;
 }
 
 .award .sm-header {
@@ -228,10 +229,77 @@ footer {
   .social-media .award {
     width: 400px;
     margin-right: 20px;
+    margin-bottom: 0;
   }
 }
 
-.radio-container {
+input[type=text],
+input[type=email],
+input[type=password] {
+  width: 100%;
+  border: 1px solid #e7e7e7;
+  padding-left: 5px;
+  line-height: 1.5;
+  margin: 0.5rem 0;
+}
+
+label {
+  color: #727272;
+}
+
+textarea {
+  width: 100%;
+  border: 1px solid #e7e7e7;
+  padding-left: 5px;
+  line-height: 1.5;
+  margin-bottom: 2rem;
+}
+
+select {
+  width: 100%;
+  padding: 0.5rem 0;
+  font-size: 0.9rem;
+  border: 1px solid #e7e7e7;
+  color: #989898;
+  margin-bottom: 1rem;
+}
+
+.form-heading {
+  font-weight: normal;
+  margin-bottom: 1rem;
+}
+
+.form-heading-alt {
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+  font-weight: normal;
+}
+
+.checkmark-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+.checkmark-container .checkmark-group {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 30%;
+          flex: 1 1 30%;
+  color: #989898;
+  margin-bottom: 0.9rem;
+}
+
+.checkmark-container input[type=checkbox]:hover {
+  cursor: pointer;
+}
+
+.dropdown-menus {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -245,23 +313,63 @@ footer {
       flex-wrap: wrap;
 }
 
-.radio-container .radio-group {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-flex: 1;
-      -ms-flex: 1 0;
-          flex: 1 0;
+.dropdown-menus .dropdown-container {
+  font-size: 0.9rem;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 calc(100% / 2 - 1.5rem);
+          flex: 0 1 calc(100% / 2 - 1.5rem);
 }
 
-input[type=text] {
-  background: blue;
+button {
+  background: white;
+  font-size: 1rem;
+  text-transform: uppercase;
+  padding: 1rem 0;
+  margin: 1.5rem 0;
+  width: calc(100% / 2 - 1.5rem);
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: 1px solid black;
+}
+
+button:hover {
+  cursor: pointer;
+  background: #00c8c8;
+}
+
+.legal-link {
+  color: #00c8c8;
+  cursor: pointer;
+}
+
+.phone-number {
+  color: #00c8c8;
+  font-weight: bold;
+}
+
+.blue-heading {
+  color: #00c8c8;
+}
+
+.support {
+  margin: 1rem 0;
+}
+
+@media (min-width: 760px) {
+  .lvp-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .lvp-container button {
+    margin-right: 1.5rem;
+  }
 }
 
 nav {
@@ -275,6 +383,24 @@ nav {
       -ms-flex-align: center;
           align-items: center;
   padding: 1.5rem 1rem;
+}
+
+.hidden {
+  display: none;
+}
+
+.mobile-menu {
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+.mobile-menu li {
+  padding: 1rem 0;
+}
+
+.mobile-menu li:hover {
+  cursor: pointer;
+  background: #00c8c8;
 }
 
 .title {
@@ -333,6 +459,9 @@ header {
           align-items: center;
   text-align: center;
   text-transform: uppercase;
+  height: 310px;
+  background-image: url("../img/ave-header-image-min.jpg");
+  color: white;
 }
 
 header h1 {
@@ -356,7 +485,8 @@ h6 {
 
 p,
 label,
-li {
+li,
+button {
   font-family: 'Montserrat', sans-serif;
   font-weight: 300;
 }
