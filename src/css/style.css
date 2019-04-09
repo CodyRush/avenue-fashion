@@ -90,7 +90,22 @@ footer {
 }
 
 .links-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin: 2rem 0rem;
+}
+
+.links-container ul {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 calc(100% / 2);
+          flex: 1 1 calc(100% / 2);
+  margin-bottom: 1.5rem;
 }
 
 .links-container .link-heading {
@@ -112,13 +127,30 @@ footer {
   background: #333;
   color: #fff;
   padding: 2.5rem 2.25rem;
+  margin-bottom: 1.5rem;
   text-align: center;
 }
 
 .sm-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background: #00c8c8;
   padding: 3.4rem 6rem;
   color: white;
+}
+
+.sm-icons .icon {
+  width: 1.2rem;
+}
+
+.sm-icons .facebook {
+  width: 0.6rem;
 }
 
 .foot-bar {
@@ -128,27 +160,7 @@ footer {
   padding: 1rem 0;
 }
 
-.flex-around-start {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-}
-
-.flex-evenly-center {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.flex-between-center {
+.icon-view {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -158,10 +170,32 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 1.5rem 1rem;
+}
+
+.icon-view .title {
+  margin-left: 1.5rem;
+}
+
+.icon-view .menu-icon {
+  width: 2rem;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .center-container {
   max-width: 820px;
   margin: 0 auto;
+  padding: 1rem;
 }
 /*# sourceMappingURL=style.css.map */

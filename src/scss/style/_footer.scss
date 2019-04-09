@@ -3,7 +3,15 @@ footer {
 }
 
 .links-container {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
     margin: 2rem 0rem;
+
+    ul {
+        flex: 1 1 calc(100% / 2);
+        margin-bottom: 1.5rem;
+    }
     .link-heading {
         margin: 1rem 0;
         color: $type-dark;
@@ -24,13 +32,25 @@ footer {
     background: $primary-dark;
     color: #fff;
     padding: 2.5rem 2.25rem;
+    margin-bottom: 1.5rem;
     text-align: center;
 }
 
 .sm-icons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     background: $primary-light;
     padding: 3.4rem 6rem;
     color: white;
+
+    .icon {
+        width: 1.2rem;
+    }
+
+    .facebook {
+        width: 0.6rem;
+    }
 }
 
 .foot-bar {
