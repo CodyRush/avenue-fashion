@@ -20,7 +20,27 @@ footer {
 
     .link {
         color: $type-dark-2; 
-        line-height: 1.3;
+        line-height: 1.5;
+    }
+
+    .link:hover {
+        cursor: pointer;
+        text-decoration: underline;
+    }
+
+    .address {
+        color: $type-light;
+        margin-bottom: 0.3rem;
+    }
+
+    .phone {
+        color: $type-light;
+        line-height: 1.5;
+    }
+
+    .email {
+        color: $type-light;
+        line-height: 1.5;
     }
 }
 
@@ -34,6 +54,17 @@ footer {
     padding: 2.5rem 2.25rem;
     margin-bottom: 1.5rem;
     text-align: center;
+
+    .sm-header {
+        text-transform: uppercase;
+        font-size: 1.7rem;
+    }
+    
+    .sm-tag {
+        text-transform: uppercase;
+        font-size: 1.7rem;
+        line-height: 1.5;
+    }
 }
 
 .sm-icons {
@@ -45,11 +76,11 @@ footer {
     color: white;
 
     .icon {
-        width: 1.2rem;
+        width: 1.5rem;
     }
 
     .facebook {
-        width: 0.6rem;
+        width: 0.7rem;
     }
 }
 
@@ -59,3 +90,4 @@ footer {
     color: $type-light;
     padding: 1rem 0;
 }
+
